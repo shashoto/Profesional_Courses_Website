@@ -1,0 +1,278 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom CSS */
+a,
+a:hover {
+    text-decoration: none;
+
+}
+
+p {
+    margin: 0;
+}
+
+.home-banner .home-banner-text .btn-outline-light,
+.products .up_to_content .btn-outline-light {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+
+.home-banner .home-banner-text .btn-outline-light:hover,
+.products .up_to_content .btn-outline-light:hover {
+    background-color: Black;
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+
+    background-color: transparent;
+    background: transparent;
+}
+
+.products .up_to_off .up_to_content h2 {
+    background-color: transparent;
+    color: #D3D3D3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.products .up_to_off .img {
+    filter: blur(5px);
+}
+
+
+
+
+
+
+/* Home CSS */
+.home .home-banner-1,
+.home .home-banner-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 650px;
+    position: relative;
+}
+
+.home .home-banner-1 {
+    background-image: url('img/1.jpg');
+}
+
+.home .home-banner-2 {
+    background-image: url('img/2.jpg');
+}
+
+.home .home-banner .home-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-110%, -50%)
+}
+
+.home .home-banner .home-banner-text h1 {
+    font-size: 3rem;
+    color: rgb(73, 72, 72);
+}
+
+.home .home-banner .home-banner-text h2 {
+    color: black;
+}
+
+/* product CSS */
+
+.products .up_to_off {
+    position: relative;
+
+
+}
+
+.products .up_to_off::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.products .up_to_content h2 {
+    color: var(--text-white);
+    font-size: 2.675rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.products .up_to_content h5 {
+    color: var(--text-white);
+    font-size: 1rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.container .courses .card {
+    width: 25rem;
+    height: 30rem;
+}
+
+.container .courses .card .card-img-top {
+    width: 25rem;
+    height: 15rem;
+}
+
+
+/* footer */
+.contact {
+    padding: 4rem 0;
+    background-image: url('img/Footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .container .top h5,
+.contact .container .top h2 {
+    color: white;
+}
+
+.contact .container .left-part .con-info h4,
+.contact .container .left-part .con-info ul li a {
+    color: white;
+}
+
+.contact .info li p a {
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0.75rem 0;
+    color: var(--text-white);
+}
+
+.contact .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact .form-control {
+    height: 3.75rem;
+    padding: 0.375rem 1.1875rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+}
+
+.contact .textarea {
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.1875rem;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.3125rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+    ;
+}
+
+.contact .textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.copyright {
+    background: #D3D3D3;
+}
+
+.copyright p,
+.copyright a {
+    color: var (--text-gray);
+}
+
+.fw-bold {
+    color: #f5f5f5;
+}
+
+
+@media (max-width: 425px) {
+    .container .courses .card {
+        font-weight: 12rem;
+        width: 18rem;
+        height: 25rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 5rem;
+
+    }
+
+    .container .courses .card .card-img-top {
+        width: 18rem;
+        height: 12rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .container .courses .card {
+        font-weight: 12rem;
+        width: 18rem;
+        height: 25rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 8rem;
+
+    }
+
+    .container .courses .card .card-img-top {
+        width: 18rem;
+        height: 12rem;
+    }
+}
+@media (max-width: 640px) {
+    .container .courses .card {
+        font-weight: 12rem;
+        width: 20rem;
+        height: 25rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 10rem;
+
+    }
+
+    .container .courses .card .card-img-top {
+        width: 18rem;
+        height: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .courses .card {
+        font-weight: 12rem;
+        width: 12rem;
+        height: 25rem;
+
+    }
+
+    .container .courses .card .card-img-top {
+        width: 12rem;
+        height: 12rem;
+    }
+}
